@@ -103,6 +103,83 @@ header{position:relative;z-index:30;height:var(--head);display:flex;align-items:
 @media(min-width:900px){.floatcard{left:auto;right:28px;bottom:28px;width:340px}}
 .floatcard:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
 
+
+/* ===== 下層セクション ===== */
+section.blk{padding:84px 24px;max-width:1040px;margin:0 auto;position:relative}
+@media(min-width:900px){section.blk{padding:112px 40px}}
+.label{display:block;font-size:12.5px;color:var(--coral-d);margin-bottom:12px}
+h2{font-family:"Zen Old Mincho",serif;font-weight:500;font-size:26px;line-height:1.7;letter-spacing:.06em;margin-bottom:26px}
+@media(min-width:900px){h2{font-size:32px}}
+.lead{color:var(--sub);max-width:640px}
+.note{font-size:12.5px;color:var(--sub);line-height:1.8;margin-top:16px}
+.js .fade{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease}
+.js .fade.in{opacity:1;transform:none}
+.hnav{display:none;gap:24px;font-size:13px;letter-spacing:.1em}
+.hnav a{text-decoration:none;color:var(--sub)}
+.hnav a:hover{color:var(--ink)}
+@media(min-width:1100px){.hnav{display:flex}}
+
+.worry{list-style:none;display:grid;gap:12px;margin-top:6px}
+@media(min-width:760px){.worry{grid-template-columns:1fr 1fr}}
+.worry li{background:#fffaf6;border:1px solid var(--line);border-radius:20px;padding:16px 20px 16px 54px;position:relative}
+.worry li::before{content:"";position:absolute;left:20px;top:50%;width:20px;height:20px;margin-top:-10px;border-radius:50% 50% 50% 10%;background:var(--peach2);transform:rotate(-30deg)}
+.after{margin-top:26px}
+
+.lessons{display:grid;gap:26px}
+@media(min-width:860px){.lessons{grid-template-columns:repeat(3,1fr);gap:24px}}
+.lesson{background:#fffaf6;border:1px solid var(--line);border-radius:28px;overflow:hidden;position:relative}
+.lesson .ph{position:relative;aspect-ratio:4/4.4;overflow:hidden;border-radius:999px 999px 0 0;margin:12px 12px 0}
+.lesson .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;transition:transform 1.2s ease}
+.lesson:hover .ph img{transform:scale(1.05)}
+.lesson .ph small{position:absolute;left:50%;bottom:8px;transform:translateX(-50%);font-size:10.5px;color:#6a5753;background:rgba(255,250,246,.85);padding:1px 10px;border-radius:999px;white-space:nowrap}
+.lesson .tx{padding:20px 22px 26px}
+.lesson .no{font-size:22px;color:var(--coral)}
+.lesson h3{font-family:"Zen Old Mincho",serif;font-size:21px;margin:4px 0 8px;letter-spacing:.06em}
+.lesson p{color:var(--sub);font-size:15px;line-height:1.85}
+.extra{margin-top:30px;background:linear-gradient(135deg,var(--peach) 0%,#fbe4d7 100%);border-radius:26px;padding:24px 26px;display:grid;gap:6px}
+.extra b{font-family:"Zen Old Mincho",serif;font-size:18px}
+.extra span{font-size:15px;color:#5b4a46}
+
+.steps{list-style:none;counter-reset:s;display:grid;gap:14px;max-width:720px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;background:#fffaf6;border:1px solid var(--line);border-radius:22px;padding:18px 20px}
+.steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--peach);font-family:"Cormorant Garamond",serif;font-size:22px;font-weight:600;color:var(--coral-d)}
+.steps b{display:block;font-family:"Zen Old Mincho",serif;font-size:17px}
+.steps span{color:var(--sub);font-size:15px;line-height:1.8}
+.price-note{margin-top:18px;border:1.5px dashed var(--peach2);border-radius:20px;padding:16px 20px;background:rgba(255,250,246,.7);font-size:14.5px;color:#5b4a46;max-width:720px}
+
+.coach{display:grid;gap:26px;align-items:center}
+@media(min-width:860px){.coach{grid-template-columns:.8fr 1.2fr;gap:56px}}
+.coach .ph{position:relative;aspect-ratio:4/4.6;border-radius:999px 999px 28px 28px;overflow:hidden;max-width:360px;margin:0 auto;width:100%}
+.coach .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.coach .ph small{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);font-size:10.5px;color:#6a5753;background:rgba(255,250,246,.85);padding:1px 10px;border-radius:999px;white-space:nowrap}
+.coach .nm{font-family:"Zen Old Mincho",serif;font-size:24px;letter-spacing:.1em}
+.coach .nm small{display:block;font-size:12px;letter-spacing:.2em;color:var(--sub);font-family:"Zen Maru Gothic",sans-serif;margin-top:2px}
+.quote{margin-top:16px;padding-left:18px;border-left:3px solid var(--peach2);color:#5b4a46;font-family:"Zen Old Mincho",serif;font-size:18px;line-height:1.9}
+
+details{border-bottom:1px solid var(--line);padding:2px 0}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:18px 40px 18px 0;position:relative;font-weight:500;min-height:48px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:6px;top:14px;font-size:24px;color:var(--coral);transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 20px;color:var(--sub);font-size:15px}
+
+.info{display:grid;grid-template-columns:104px 1fr;border-top:1px solid var(--line);max-width:700px}
+.info dt,.info dd{padding:15px 0;border-bottom:1px solid var(--line)}
+.info dt{color:var(--coral-d);font-size:14px;font-weight:700}
+.info dd{font-size:15px}
+.maplink{display:inline-block;margin-top:6px;font-size:14px;color:var(--coral-d)}
+
+.last{text-align:center;padding-bottom:140px}
+.last .lead{margin:0 auto 26px}
+.last .cta2{display:flex;flex-direction:column;align-items:center;gap:12px}
+.ps{margin:34px auto 0;max-width:560px;text-align:left;border-top:1px solid var(--line);padding-top:22px;color:var(--sub);font-size:15px}
+.ps b{font-family:"Zen Old Mincho",serif;color:var(--ink)}
+.divider{height:70px;overflow:hidden;opacity:.7}
+.divider svg{width:100%;height:100%}
+.divider path{fill:none;stroke:var(--peach2);stroke-width:1.4}
+@media(prefers-reduced-motion:reduce){.js .fade{opacity:1;transform:none;transition:none}.lesson:hover .ph img{transform:none}}
+
 footer{padding:28px 24px 120px;text-align:center;color:var(--sub);font-size:12px;line-height:1.8}
 footer p+p{margin-top:6px}
 
@@ -149,10 +226,11 @@ footer p+p{margin-top:6px}
 </style>
 </head>
 <body>
-<div class="demo">これはECLIA BODY STUDIO様向けに作ったデモ（トップページのみ・非公開の見本）です。内容はInstagramの公開情報をもとにしています。</div>
+<div class="demo">これはECLIA BODY STUDIO様向けに作ったデモ（非公開の見本）です。内容はInstagramの公開情報をもとにしています。</div>
 
 <header>
   <a class="logo" href="#top" aria-label="ECLIA BODY STUDIO トップへ">ECLIA<small>BODY STUDIO</small></a>
+  <nav class="hnav" aria-label="ページ内メニュー"><a href="#lesson">レッスン</a><a href="#flow">体験の流れ</a><a href="#coach">講師</a><a href="#faq">質問</a><a href="#access">アクセス</a></nav>
   <a class="btn s hbtn" data-cta href="https://lin.ee/93iuyUj1" target="_blank" rel="noopener">LINEで予約・相談</a>
 </header>
 
@@ -189,10 +267,96 @@ footer p+p{margin-top:6px}
       </div>
     </div>
   </section>
+
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 1200 70" preserveAspectRatio="none"><path d="M0,40 C150,0 300,70 450,36 C600,2 750,70 900,36 C1020,10 1110,40 1200,30"/></svg></div>
+
+  <section class="blk" id="worry">
+    <span class="label en fade">WORRY</span>
+    <h2 class="fade">体験してみたい。<br>でも、こんなことが気になりませんか。</h2>
+    <ul class="worry fade">
+      <li>運動が久しぶりで、ついていけるか不安</li>
+      <li>はじめてのスタジオは、少し緊張する</li>
+      <li>人の目を気にせず、自分のペースで動きたい</li>
+      <li>忙しくても、無理なく続けられる方法を知りたい</li>
+    </ul>
+    <p class="after lead fade">ECLIAは、女性専用・完全予約制のスタジオです。はじめての方も、まずはLINEでお気軽にご相談ください。ひとりひとりの体と気持ちに合わせて、ひとつずつ丁寧にご案内します。</p>
+  </section>
+
+  <section class="blk" id="lesson">
+    <span class="label en fade">LESSON</span>
+    <h2 class="fade">3つのレッスンで、<br>内側から整える。</h2>
+    <div class="lessons">
+      <article class="lesson fade"><div class="ph"><img src="assets/s1.jpg" alt="" loading="lazy"><small>※ イメージ（AI生成）</small></div><div class="tx"><span class="no en">01</span><h3>ピラティス</h3><p>呼吸と、体の中心を意識しながら、ゆっくり動きます。姿勢を整えて、しなやかな体づくりを目指します。</p></div></article>
+      <article class="lesson fade"><div class="ph"><img src="assets/s2.jpg" alt="" loading="lazy"><small>※ イメージ（AI生成）</small></div><div class="tx"><span class="no en">02</span><h3>ヨガ</h3><p>深い呼吸とともに、体をのばし、心もゆるめます。忙しい毎日の、ほっとできる時間に。</p></div></article>
+      <article class="lesson fade"><div class="ph"><img src="assets/s3.jpg" alt="" loading="lazy"><small>※ イメージ（AI生成）</small></div><div class="tx"><span class="no en">03</span><h3>ウォーキング</h3><p>立ち方、歩き方を見直して、美しい姿勢を身につけます。普段の一歩が、変わります。</p></div></article>
+    </div>
+    <div class="extra fade"><b>出張レッスン・外でのヨガも</b><span>出張レッスンや、屋外のヨガ（外ピラヨガ）も行っています。内容や日程は、LINEでご相談ください。</span></div>
+    <p class="note fade">※ レッスンの説明は一般的な内容です。実際の内容は、講師にご確認のうえ調整します。</p>
+  </section>
+
+  <section class="blk" id="flow">
+    <span class="label en fade">FIRST LESSON</span>
+    <h2 class="fade">はじめての方へ、<br>初回体験レッスンの流れ。</h2>
+    <ol class="steps">
+      <li class="fade"><div><b>LINEで相談</b><span>体験したいレッスンと、ご希望の日時を送ってください。聞きたいことだけでも大丈夫です。</span></div></li>
+      <li class="fade"><div><b>日程を決める</b><span>空き状況をお知らせして、日程を決めます。西宮・神戸のどちらかも、ここでご相談ください。</span></div></li>
+      <li class="fade"><div><b>当日、お体の状態をお聞きします</b><span>気になっていることや、体の状態をお聞きして、無理のない内容でご案内します。</span></div></li>
+      <li class="fade"><div><b>レッスン</b><span>呼吸をととのえるところから、ゆっくりはじめます。</span></div></li>
+    </ol>
+    <p class="price-note fade">体験の料金・持ち物・所要時間は、お店にご確認のうえ、こちらに掲載します（このデモでは未掲載です）。</p>
+  </section>
+
+  <section class="blk" id="coach">
+    <span class="label en fade">INSTRUCTOR</span>
+    <div class="coach">
+      <div class="ph fade"><img src="assets/s2.jpg" alt="" loading="lazy"><small>※ イメージ（AI生成）</small></div>
+      <div>
+        <h2 class="fade">講師のご紹介</h2>
+        <p class="nm fade">Kei<small>ECLIA BODY STUDIO</small></p>
+        <p class="quote fade">内側から整え、<br>しなやかに美しく。</p>
+        <p class="lead fade" style="margin-top:18px">西宮・神戸で、ピラティス・ヨガ・ウォーキングをお伝えしています。お一人おひとりの体に向き合い、無理なく続けられるレッスンを大切にしています。</p>
+        <p class="note fade">※ 経歴や資格は、確認のうえ掲載します。講師のお写真は、ご用意いただいたものに差し替えます。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="faq">
+    <span class="label en fade">FAQ</span>
+    <h2 class="fade">よくあるご質問</h2>
+    <div class="fade">
+      <details><summary>運動が苦手でも大丈夫ですか？</summary><p>大丈夫です。はじめての方も、ひとつずつ丁寧にご案内します。まずはLINEで、ご不安なことをお聞かせください。</p></details>
+      <details><summary>男性も参加できますか？</summary><p>ECLIAは、女性専用のスタジオです。</p></details>
+      <details><summary>予約は必要ですか？</summary><p>完全予約制です。LINEからご予約・ご相談いただけます。</p></details>
+      <details><summary>西宮と神戸、どちらでも受けられますか？</summary><p>西宮・神戸で、初回体験レッスンを受け付けています。ご希望の場所を、LINEでお知らせください。</p></details>
+      <details><summary>出張レッスンはできますか？</summary><p>出張レッスンも行っています。内容や日程は、LINEでご相談ください。</p></details>
+    </div>
+  </section>
+
+  <section class="blk" id="access">
+    <span class="label en fade">ACCESS</span>
+    <h2 class="fade">スタジオ情報</h2>
+    <dl class="info fade">
+      <dt>スタジオ名</dt><dd>ECLIA BODY STUDIO</dd>
+      <dt>西宮</dt><dd>兵庫県西宮市今津水波町2-27<br><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=%E5%85%B5%E5%BA%AB%E7%9C%8C%E8%A5%BF%E5%AE%AE%E5%B8%82%E4%BB%8A%E6%B4%A5%E6%B0%B4%E6%B3%A2%E7%94%BA2-27" target="_blank" rel="noopener">地図を開く →</a></dd>
+      <dt>神戸</dt><dd>場所は、ご予約時にご案内します</dd>
+      <dt>レッスン</dt><dd>ピラティス／ヨガ／ウォーキング</dd>
+      <dt>ご利用</dt><dd>女性専用・完全予約制</dd>
+      <dt>予約</dt><dd>LINEからご予約・ご相談</dd>
+    </dl>
+    <p class="note fade">※ 住所は公開情報（地図）をもとにしています。営業日時・神戸の場所は、お店にご確認のうえ掲載します。</p>
+  </section>
+
+  <section class="blk last" id="reserve">
+    <span class="label en fade">RESERVATION</span>
+    <h2 class="fade">ひと呼吸から、<br>はじめませんか。</h2>
+    <p class="lead fade">体験のご相談は、LINEで受け付けています。</p>
+    <div class="cta2 fade"><a class="btn" data-cta href="https://lin.ee/93iuyUj1" target="_blank" rel="noopener">LINEで体験を相談する</a><span class="cta-sub">相談だけでも大丈夫です</span></div>
+    <p class="ps fade"><b>追伸。</b>運動に自信がなくても、体に不安があっても大丈夫です。ご相談のときに、気になっていることをひとこと添えていただければ、当日のご案内がスムーズになります。</p>
+  </section>
 </main>
 
 <footer>
-  <p>このデモはトップページのみです。体験料金・神戸の場所・営業時間などは、確認できていないため載せていません。</p>
+  <p>体験料金・神戸の場所・営業時間・講師の経歴などは、確認できていないため載せていません。</p>
   <p>映像はAI生成のイメージです。講師の写真・Instagramの画像は使用していません。</p>
 </footer>
 
@@ -247,6 +411,14 @@ document.querySelectorAll("[data-cta]").forEach(function(a){a.href=BOOKING_URL})
 
   var fc=document.querySelector('.floatcard');
   if(fc){var chk=function(){fc.classList.toggle('show',window.scrollY>160)};window.addEventListener('scroll',chk,{passive:true});chk()}
+
+  var fades=document.querySelectorAll('.fade');
+  if('IntersectionObserver' in window&&shown){
+    root.classList.add('js');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    fades.forEach(function(el){io.observe(el)});
+    setTimeout(function(){fades.forEach(function(el){el.classList.add('in')})},5000);
+  }
 
   /* 映像：3本を順にゆっくり切り替える。再生できない・動きを減らす設定のときは静止画＋ゆっくりズーム */
   var arch=document.getElementById("arch");
