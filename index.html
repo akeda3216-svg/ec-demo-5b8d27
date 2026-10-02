@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>ECLIA BODY STUDIO｜西宮・神戸の女性専用ピラティス・ヨガ</title>
+<meta name="description" content="西宮・神戸の女性専用・完全予約制のピラティス・ヨガ・ウォーキングスタジオ ECLIA BODY STUDIO。内側から整え、しなやかに美しく。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Zen+Old+Mincho:wght@500;700&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#fbf4ee; --peach:#f8d3c0; --peach2:#f2b9a0; --coral:#e9806c; --coral-d:#c9604d;
+  --ink:#3b2e2c; --sub:#7a6a66; --line:#ecd9cd;
+  --demo:38px; --head:64px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--ivory);color:var(--ink);font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Yu Gothic",Meiryo,sans-serif;font-size:16px;line-height:1.9;letter-spacing:.03em;overflow-x:hidden}
+a{color:inherit}
+img,video,svg{display:block;max-width:100%}
+.en{font-family:"Cormorant Garamond",serif;letter-spacing:.2em}
+
+.demo{background:var(--ink);color:#fff;font-size:12px;line-height:1.6;text-align:center;padding:8px 12px;min-height:var(--demo)}
+
+header{position:relative;z-index:30;height:var(--head);display:flex;align-items:center;justify-content:space-between;padding:0 20px}
+.logo{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:25px;letter-spacing:.24em;text-decoration:none;line-height:1}
+.logo small{display:block;font-family:"Zen Maru Gothic",sans-serif;font-size:9px;letter-spacing:.3em;color:var(--sub);margin-top:4px;font-weight:500}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 30px;border-radius:999px;background:var(--coral-d);color:#fff;text-decoration:none;font-weight:700;font-size:15px;letter-spacing:.08em;box-shadow:0 8px 20px rgba(201,96,77,.28);transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(201,96,77,.34)}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.btn.s{min-height:42px;padding:8px 20px;font-size:13px}
+@media(min-width:900px){header{padding:0 44px}}
+.hbtn{display:none}
+@media(min-width:900px){.hbtn{display:inline-flex}}
+
+/* ===== トップ ===== */
+.hero{position:relative;overflow:hidden;padding:8px 22px 44px}
+.glow{position:absolute;left:50%;top:48%;width:min(120vw,1100px);aspect-ratio:1;margin:calc(min(120vw,1100px)/-2) 0 0 calc(min(120vw,1100px)/-2);border-radius:50%;background:radial-gradient(circle,rgba(248,211,192,.75) 0%,rgba(248,211,192,.28) 45%,rgba(251,244,238,0) 70%);pointer-events:none;transform:scale(.88);transition:transform 4s ease-in-out}
+.hero.in .glow{transform:scale(1.06)}
+.hero.ex .glow{transform:scale(.88)}
+.wave{position:absolute;left:0;right:0;bottom:70px;height:120px;opacity:.55;pointer-events:none}
+.wave path{fill:none;stroke:var(--peach2);stroke-width:1.4;stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 5s ease-out .5s forwards}
+.wave path:nth-child(2){stroke:var(--coral);opacity:.5;animation-delay:.9s}
+@keyframes draw{to{stroke-dashoffset:0}}
+
+.hero-in{position:relative;max-width:1180px;margin:0 auto;display:grid;gap:26px;align-items:center}
+@media(min-width:900px){
+  .hero{min-height:calc(100svh - var(--demo) - var(--head));padding:16px 44px 60px;display:flex;align-items:center}
+  .hero-in{grid-template-columns:1.05fr .95fr;gap:48px;width:100%}
+}
+.eyebrow{font-size:12px;letter-spacing:.12em;color:var(--sub);font-weight:500}
+.hero h1{font-family:"Zen Old Mincho",serif;font-weight:500;font-size:clamp(26px,7vw,40px);line-height:1.6;letter-spacing:.07em;margin:14px 0 16px}
+@media(min-width:900px){.hero h1{font-size:clamp(34px,3vw,46px)}}
+.hero h1 span{white-space:nowrap}
+.hero h1 .ch{display:inline-block}
+.anim .hero h1 .ch{opacity:0;transform:translateY(.55em);filter:blur(5px);animation:ch .9s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(var(--n)*55ms + .3s)}
+@keyframes ch{to{opacity:1;transform:none;filter:blur(0)}}
+.hero .sub{color:#5b4a46;font-size:15px;line-height:1.95;margin-bottom:18px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.chip{border:1px solid var(--peach2);color:var(--coral-d);border-radius:999px;padding:2px 14px;font-size:12.5px;line-height:1.8;background:rgba(255,250,246,.75)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px 16px;align-items:center}
+.cta-sub{font-size:12.5px;color:var(--sub)}
+
+/* 呼吸ガイド */
+.breath{display:flex;align-items:center;gap:16px;margin:0 0 26px}
+.ring-btn{position:relative;width:96px;height:96px;flex:none;border:0;background:none;cursor:pointer;display:grid;place-items:center;font-family:inherit;color:var(--ink)}
+.ring-btn::before,.ring-btn::after{content:"";position:absolute;inset:0;border-radius:50%}
+.ring-btn::before{background:radial-gradient(circle at 35% 30%,#fff 0%,var(--peach) 55%,var(--peach2) 100%);box-shadow:0 8px 22px rgba(233,128,108,.28);transition:transform 4s ease-in-out}
+.ring-btn::after{border:1.5px solid var(--coral);opacity:.5;transition:transform 4s ease-in-out,opacity 4s ease-in-out}
+.ring-btn.in::before{transform:scale(1.22)}
+.ring-btn.in::after{transform:scale(1.5);opacity:0}
+.ring-btn.ex::before{transform:scale(.94)}
+.ring-btn:focus-visible{outline:3px solid var(--ink);outline-offset:6px;border-radius:50%}
+.ring-btn span{position:relative;z-index:1;font-family:"Zen Old Mincho",serif;font-size:17px;font-weight:700;text-align:center;line-height:1.35}
+.breath-note{font-size:13px;color:var(--sub);line-height:1.7}
+.breath-note b{display:block;font-family:"Zen Old Mincho",serif;color:var(--ink);font-size:15px;margin-bottom:2px}
+
+/* アーチ窓 */
+.arch-wrap{position:relative;width:min(100%,430px);margin:0 auto}
+.arch-wrap::before{content:"";position:absolute;inset:-14px -14px 10px 18px;border-radius:999px 999px 28px 28px;background:linear-gradient(160deg,var(--peach) 0%,var(--peach2) 100%);transform:rotate(3.2deg);opacity:.85}
+.arch{position:relative;aspect-ratio:712/1060;border-radius:999px 999px 28px 28px;overflow:hidden;background:#efdfd3;box-shadow:0 24px 50px rgba(120,70,55,.2)}
+.poster,.hv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.poster{background:url(assets/s1.jpg) 50% 40%/cover no-repeat;transition:opacity 1.6s}
+.hv{opacity:0;transition:opacity 1.6s}
+.hv.on{opacity:1}
+.arch.ready .poster{opacity:0}
+.arch.kb .poster{animation:kb 18s ease-out both}
+@keyframes kb{from{transform:scale(1.02)}to{transform:scale(1.1)}}
+.ai-note{position:absolute;left:50%;bottom:12px;transform:translateX(-50%);font-size:11px;color:#6a5753;background:rgba(255,250,246,.85);padding:2px 10px;border-radius:999px;white-space:nowrap;z-index:3}
+.tag{position:absolute;z-index:3;background:rgba(255,250,246,.92);border-radius:999px;padding:4px 14px;font-size:12px;font-weight:700;color:var(--coral-d);box-shadow:0 4px 12px rgba(120,70,55,.12);animation:bob 5s ease-in-out infinite}
+.tag.t1{left:-6%;top:22%}
+.tag.t2{right:-4%;top:46%;animation-delay:-2s}
+.tag.t3{left:2%;bottom:16%;animation-delay:-3.5s}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+/* 浮かぶ予約カード */
+.floatcard{position:fixed;z-index:50;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:12px;background:rgba(255,250,246,.96);border:1px solid var(--line);border-radius:22px;padding:10px 10px 10px 14px;box-shadow:0 12px 30px rgba(120,70,55,.2);text-decoration:none;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.floatcard .tx{flex:1;font-size:13px;line-height:1.5}
+.floatcard .tx b{display:block;font-family:"Zen Old Mincho",serif;font-size:15px}
+.floatcard .go{flex:none;width:44px;height:44px;border-radius:50%;background:var(--coral-d);color:#fff;display:grid;place-items:center;font-size:18px}
+@media(min-width:900px){.floatcard{left:auto;right:28px;bottom:28px;width:340px}}
+.floatcard:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+
+footer{padding:28px 24px 120px;text-align:center;color:var(--sub);font-size:12px;line-height:1.8}
+footer p+p{margin-top:6px}
+
+/* スマホ：映像と文字を一画面に。映像を上に置き、文字を映像の下部に少し重ねる */
+@media(max-width:899px){
+  .hero{padding:0 0 28px}
+  .hero-in{display:flex;flex-direction:column;position:relative}
+  .arch-wrap{order:-1;width:min(72vw,calc(34svh / 1.1));margin:0 18px 0 auto}
+  .arch{aspect-ratio:auto;width:100%;height:min(79vw,34svh)}
+  .arch-wrap::before{inset:-10px -10px 8px 14px}
+  .copy{position:relative;z-index:5;margin-top:-34px;padding:44px 22px 0;background:linear-gradient(to bottom,rgba(251,244,238,0) 0,rgba(251,244,238,.9) 40px,rgba(251,244,238,.96) 100%)}
+  .eyebrow{font-size:11.5px}
+  .hero h1{margin:8px 0 10px}
+  .hero .sub{font-size:14px;line-height:1.8;margin-bottom:14px}
+  .breath{position:absolute;left:8px;top:-58px;margin:0;z-index:6}
+  .breath-note{display:none}
+  .ring-btn{width:80px;height:80px}
+  .ring-btn span{font-size:14px}
+  .tag.t3{display:none}
+  .tag.t1{left:auto;right:-4%;top:34%}
+  .tag.t2{right:-4%;top:12%}
+  .copy{display:flex;flex-direction:column;align-items:flex-start}
+  .cta-row{display:none}
+  .chips{order:5;margin:16px 0 0}
+  .glow{top:30%}
+}
+@media(prefers-reduced-motion:reduce){
+  .tag,.wave path{animation:none}
+  .wave path{stroke-dashoffset:0}
+  .glow,.ring-btn::before,.ring-btn::after{transition:none}
+  .anim .hero h1 .ch{animation:none;opacity:1;transform:none;filter:none}
+  .arch.kb .poster{animation:none}
+}
+</style>
+</head>
+<body>
+<div class="demo">これはECLIA BODY STUDIO様向けに作ったデモ（トップページのみ・非公開の見本）です。内容はInstagramの公開情報をもとにしています。</div>
+
+<header>
+  <a class="logo" href="#top" aria-label="ECLIA BODY STUDIO トップへ">ECLIA<small>BODY STUDIO</small></a>
+  <a class="btn s hbtn" data-cta href="https://lin.ee/93iuyUj1" target="_blank" rel="noopener">LINEで予約・相談</a>
+</header>
+
+<main id="top">
+  <section class="hero" id="hero" aria-label="ECLIA BODY STUDIO トップ">
+    <div class="glow" aria-hidden="true"></div>
+    <svg class="wave" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0,70 C150,10 300,110 450,60 C600,10 750,110 900,60 C1020,25 1110,60 1200,50"/><path d="M0,90 C160,40 310,120 470,80 C620,40 760,120 920,80 C1040,50 1120,80 1200,72"/></svg>
+    <div class="hero-in">
+      <div class="copy">
+        <p class="eyebrow">西宮・神戸　女性専用・完全予約制のピラティス／ヨガ／ウォーキング</p>
+        <h1 id="h1" aria-label="内側から整えて、しなやかに美しく。"><span>内側から整えて、</span><br><span>しなやかに美しく。</span></h1>
+        <p class="sub">はじめての方も、ひとつずつ丁寧に。<br>呼吸をととのえるところから、はじめませんか。</p>
+        <div class="breath">
+          <button class="ring-btn" id="ring" type="button" aria-pressed="false" aria-label="呼吸ガイドをはじめる"><span id="ringtx">呼吸を<br>はじめる</span></button>
+          <p class="breath-note"><b>ひと呼吸、ためしてみる</b>丸いボタンを押すと、4秒かけて吸って、4秒かけて吐くガイドが始まります。</p>
+        </div>
+        <div class="chips"><span class="chip">女性専用</span><span class="chip">完全予約制</span><span class="chip">初回体験レッスン</span></div>
+        <div class="cta-row">
+          <a class="btn" data-cta href="https://lin.ee/93iuyUj1" target="_blank" rel="noopener">LINEで体験を相談する</a>
+          <span class="cta-sub">相談だけでも大丈夫です</span>
+        </div>
+      </div>
+      <div class="arch-wrap" id="archwrap">
+        <div class="arch" id="arch">
+          <div class="poster" aria-hidden="true"></div>
+          <video class="hv" data-pos="50% 40%" muted playsinline preload="auto" aria-hidden="true"><source src="assets/s1.mp4" type="video/mp4"></video>
+          <video class="hv" data-pos="50% 40%" muted playsinline preload="none" aria-hidden="true"><source src="assets/s2.mp4" type="video/mp4"></video>
+          <video class="hv" data-pos="50% 40%" muted playsinline preload="none" aria-hidden="true"><source src="assets/s3.mp4" type="video/mp4"></video>
+          <div class="ai-note">※ 映像はイメージ（AI生成）です</div>
+        </div>
+        <span class="tag t1">ピラティス</span>
+        <span class="tag t2">ヨガ</span>
+        <span class="tag t3">ウォーキング</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>このデモはトップページのみです。体験料金・神戸の場所・営業時間などは、確認できていないため載せていません。</p>
+  <p>映像はAI生成のイメージです。講師の写真・Instagramの画像は使用していません。</p>
+</footer>
+
+<a class="floatcard" data-cta href="https://lin.ee/93iuyUj1" target="_blank" rel="noopener" aria-label="LINEで初回体験レッスンを相談する">
+  <span class="tx"><b>初回体験レッスン</b>LINEで気軽に相談できます</span><span class="go" aria-hidden="true">→</span>
+</a>
+
+<script>
+/* 予約先は1か所だけ（公式LINE）。変える場合はここだけ書き換える */
+var BOOKING_URL="https://lin.ee/93iuyUj1";
+document.querySelectorAll("[data-cta]").forEach(function(a){a.href=BOOKING_URL});
+
+(function(){
+  var root=document.documentElement;
+  var reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var shown=document.visibilityState==="visible";
+
+  /* 見出しを一文字ずつ出す（表示される環境だけ） */
+  var h1=document.getElementById("h1");
+  if(shown&&!reduce){
+    root.classList.add("anim");
+    var n=0;
+    [].slice.call(h1.querySelectorAll("span")).forEach(function(sp){
+      var t=sp.textContent; sp.textContent="";
+      t.split("").forEach(function(c){var s=document.createElement("span");s.className="ch";s.style.setProperty("--n",n++);s.textContent=c;sp.appendChild(s)});
+    });
+  }
+
+  /* 呼吸ガイド：4秒吸って、4秒吐く。丸いボタンと背景の光が同じリズムで広がる */
+  var ring=document.getElementById("ring"), tx=document.getElementById("ringtx"), hero=document.getElementById("hero");
+  var timer=null, phase=0;
+  function step(){
+    var inhale=(phase%2===0);
+    ring.classList.toggle("in",inhale); ring.classList.toggle("ex",!inhale);
+    hero.classList.toggle("in",inhale); hero.classList.toggle("ex",!inhale);
+    tx.textContent=inhale?"吸って…":"吐いて…";
+    phase++;
+  }
+  function stop(){
+    clearInterval(timer);timer=null;phase=0;
+    ring.classList.remove("in","ex");hero.classList.remove("in","ex");
+    tx.innerHTML="呼吸を<br>はじめる";
+    ring.setAttribute("aria-pressed","false");
+    ring.setAttribute("aria-label","呼吸ガイドをはじめる");
+  }
+  ring.addEventListener("click",function(){
+    if(timer){stop();return}
+    ring.setAttribute("aria-pressed","true");
+    ring.setAttribute("aria-label","呼吸ガイドを止める");
+    step();timer=setInterval(step,4000);
+  });
+
+  /* 映像：3本を順にゆっくり切り替える。再生できない・動きを減らす設定のときは静止画＋ゆっくりズーム */
+  var arch=document.getElementById("arch");
+  var vids=[].slice.call(arch.querySelectorAll(".hv"));
+  function still(){arch.classList.add("kb")}
+  if(reduce){still()}
+  else{
+    var cur=-1,failed=false;
+    var show=function(i){
+      cur=i;
+      vids.forEach(function(v,k){if(k!==i)v.classList.remove("on")});
+      var v=vids[i];
+      v.style.objectPosition=v.getAttribute("data-pos");
+      v.preload="auto";
+      try{v.currentTime=0}catch(e){}
+      var p=v.play();
+      if(p&&p.catch){p.catch(function(){if(!failed){failed=true;still()}})}
+      v.classList.add("on");
+    };
+    vids.forEach(function(v,i){
+      v.addEventListener("playing",function(){arch.classList.add("ready")});
+      v.addEventListener("timeupdate",function(){
+        if(i!==cur||!v.duration)return;
+        if(v.duration-v.currentTime<1.6&&!v._q){v._q=true;show((i+1)%vids.length);setTimeout(function(){v._q=false;v.pause()},1800)}
+      });
+      v.addEventListener("ended",function(){if(i===cur)show((i+1)%vids.length)});
+    });
+    show(0);
+    if("IntersectionObserver" in window){
+      new IntersectionObserver(function(es){es.forEach(function(e){
+        var v=vids[cur];if(!v)return;
+        if(e.isIntersecting){v.play&&v.play().catch(function(){})}else{v.pause()}
+      })},{threshold:.1}).observe(arch);
+    }
+    setTimeout(function(){if(!arch.classList.contains("ready")&&!failed){failed=true;still()}},4500);
+  }
+})();
+</script>
+</body>
+</html>
